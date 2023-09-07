@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HMS_App.Patient_Form.Add_Patient_Form" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAYAhCACABAAAAKAAAICACBAgAgACAQEAAEEAII=</HashCode>
+      <FileName>Patient Form\Add_Patient_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Admin_menu_Form" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAASECCACAAIEIQCACIgSAABEoAAAEEQCAQBCAIA=</HashCode>
+      <FileName>Patient Form\Admin_menu_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Billing_Form" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAMIACCCCBAABAiBAAICCABAgAgCAAAAAQFEAIY=</HashCode>
+      <FileName>Patient Form\Billing_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.BookAppointmentForm" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAgAAAASIIABAAAATAAAAGABAAAAAAgIgBBAICACI=</HashCode>
+      <FileName>Patient Form\BookAppointmentForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.CancelAppointment_Form" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCBAAAAACAAABECAACAAEACAAgAAAAAAUAAAAAAAAA=</HashCode>
+      <FileName>Patient Form\CancelAppointment_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Check_Doctor_Appointment_Form" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAASACABAAAASAAAICAYBAAAAAAgAAAAMEAKI=</HashCode>
+      <FileName>Patient Form\Check_Doctor_Appointment_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.CheckBedAvailabilityForm" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAQBAAAACAAAACAAACAAAAAAAAAASAAAA=</HashCode>
+      <FileName>Patient Form\CheckBedAvailabilityForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.CheckBill_Form" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAADAAQBAAAICAAAACQAAAAAAAAAAEAACAAAA=</HashCode>
+      <FileName>Patient Form\CheckBill_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.CheckDoctorSchedule_Form" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAASAAQBCAAACAAAICAAAAAAAAAIAAAAKAAAI=</HashCode>
+      <FileName>Patient Form\CheckDoctorSchedule_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.DetailForm" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQEACACABAAAACAAMACAABQAAACAAIAAAEEAII=</HashCode>
+      <FileName>Patient Form\DetailForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Discharge_Patient_Form" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACABAAAASAAAACAABAAAAAAAAABAEUAYQ=</HashCode>
+      <FileName>Patient Form\Discharge_Patient_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Generate_medical_Report_Form" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgAQAACACBBAAAQCAABQCAABAAAAAAECAAgEEQIA=</HashCode>
+      <FileName>Patient Form\Generate_medical_Report_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Issue_Bed_form" Collapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patient Form\Issue_Bed_form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Manage_DoctorSchedule_Form" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAADACIBEAAASAAAICAABEgAgAAAAAAAEEAII=</HashCode>
+      <FileName>Patient Form\Manage_DoctorSchedule_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.ManageAppointments_form" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAICACCQgAAQCAAUACAIBgAIAAAAQAgBEEAKE=</HashCode>
+      <FileName>Patient Form\ManageAppointments_form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Patient_menu_form" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAIAIBACASYAAAACCIAgACCABgBAAAABgBAQBQJII=</HashCode>
+      <FileName>Patient Form\Patient_menu_form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.PatientSatisfactionSurveyForm" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAQBAQAACAAAACAAAAAAAAAAAAAADAAgA=</HashCode>
+      <FileName>Patient Form\PatientSatisfactionSurveyForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.ShiftAppointment_Form" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASCAAACAACAAABACACCAEAACAAgAAAAAAABAFAAAAAA=</HashCode>
+      <FileName>Patient Form\ShiftAppointment_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Suggest_Medicine_Form" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAKRBAABACAABICAgBAgAgAAAAAAgFEAII=</HashCode>
+      <FileName>Patient Form\Suggest_Medicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.Update_Patient_Form" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABgQABAhSACQBBQQACAAIoCBIBIEAAggAAEBEIAAYA=</HashCode>
+      <FileName>Patient Form\Update_Patient_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.View_Patient_form" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAQUQCACARBEQACCAIACAABgAEAAAgAAJABAAKA=</HashCode>
+      <FileName>Patient Form\View_Patient_form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.ViewCommonDiseasesForm" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAQAAAAACAAAACBAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Patient Form\ViewCommonDiseasesForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.ViewMedicalReportForm" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAACAAQBAFIAiAAAAGAAAAAIgAgBAAAACAAAA=</HashCode>
+      <FileName>Patient Form\ViewMedicalReportForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Patient_Form.ViewPrescriptionForm" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAARBAAAACAAAACAAAAAAAAAAIAAACAgAA=</HashCode>
+      <FileName>Patient Form\ViewPrescriptionForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.AddMedicine_Form" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAwAAACACABAAAACAAAICAABAgAgAAAAABAEEAIo=</HashCode>
+      <FileName>Pharmacy Form\AddMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.DeleteMedicine_Form" Collapsed="true">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACACABAAAACAAAASAQBAAAAAAAQABAEEAIA=</HashCode>
+      <FileName>Pharmacy Form\DeleteMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.Pharmacy_Menu_Form" Collapsed="true">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAEACACAAAAIgCAAAAGAAjQAAAAAAhBAUBAAIE=</HashCode>
+      <FileName>Pharmacy Form\Pharmacy_Menu_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.PurchaseMedicine_Form" Collapsed="true">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAgIFACICABgAAAGABACCAAhQIAACABAIAAEEAIA=</HashCode>
+      <FileName>Pharmacy Form\PurchaseMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.UpdateMedicine_Form" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIEEAABaACABAQAAiAAAICQghAUAAAAAEAIEMEAIA=</HashCode>
+      <FileName>Pharmacy Form\UpdateMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.ViewDemandMedicine_Form" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACECABAAAACAAAACAAhAAAAAAEAAAAEEAIA=</HashCode>
+      <FileName>Pharmacy Form\ViewDemandMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.ViewExpiredMedicine_Form" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACAAAASACABAAAACAAAICAAhAIAAAAAAAAAMEAIA=</HashCode>
+      <FileName>Pharmacy Form\ViewExpiredMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_App.Pharmacy_Form.ViewMedicine_Form" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIgAAEACACAFAAAACAAAACAAhAAEAAAAAAAAFEAKA=</HashCode>
+      <FileName>Pharmacy Form\ViewMedicine_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

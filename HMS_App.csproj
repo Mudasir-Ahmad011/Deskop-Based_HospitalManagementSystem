@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D050109B-2D38-4455-8E9D-B83F80A2EDDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HMS_App</RootNamespace>
+    <AssemblyName>HMS_App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Appointment.cs" />
+    <Compile Include="BL\Customer.cs" />
+    <Compile Include="BL\Doctor.cs" />
+    <Compile Include="BL\ExpiredMedicine.cs" />
+    <Compile Include="BL\Management_Staff.cs" />
+    <Compile Include="BL\Medicine.cs" />
+    <Compile Include="BL\MUser.cs" />
+    <Compile Include="BL\Patient.cs" />
+    <Compile Include="BL\PatientBill.cs" />
+    <Compile Include="BL\Pharmacist.cs" />
+    <Compile Include="BL\Report.cs" />
+    <Compile Include="DL\Appointment_CRUD.cs" />
+    <Compile Include="DL\Customer_CRUD.cs" />
+    <Compile Include="DL\Doctor_CRUD.cs" />
+    <Compile Include="DL\ExpiredMedicine_CRUD.cs" />
+    <Compile Include="DL\Medicine_CRUD.cs" />
+    <Compile Include="DL\MUser_CRUD.cs" />
+    <Compile Include="DL\PatientCRUD.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUser Form\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUser Form\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUser Form\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUser Form\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUserGridViewForm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUserGridViewForm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUserGridViewForm\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUserGridViewForm\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUserGridViewForm\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUserGridViewForm\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Add_Patient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Add_Patient_Form.Designer.cs">
+      <DependentUpon>Add_Patient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Admin_menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Admin_menu_Form.Designer.cs">
+      <DependentUpon>Admin_menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Billing_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Billing_Form.Designer.cs">
+      <DependentUpon>Billing_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\BookAppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\BookAppointmentForm.Designer.cs">
+      <DependentUpon>BookAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\CancelAppointment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\CancelAppointment_Form.Designer.cs">
+      <DependentUpon>CancelAppointment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\CheckBedAvailabilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\CheckBedAvailabilityForm.Designer.cs">
+      <DependentUpon>CheckBedAvailabilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\CheckBill_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\CheckBill_Form.Designer.cs">
+      <DependentUpon>CheckBill_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\CheckDoctorSchedule_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\CheckDoctorSchedule_Form.Designer.cs">
+      <DependentUpon>CheckDoctorSchedule_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Check_Doctor_Appointment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Check_Doctor_Appointment_Form.Designer.cs">
+      <DependentUpon>Check_Doctor_Appointment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\DetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\DetailForm.Designer.cs">
+      <DependentUpon>DetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Discharge_Patient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Discharge_Patient_Form.Designer.cs">
+      <DependentUpon>Discharge_Patient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Generate_medical_Report_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Generate_medical_Report_Form.Designer.cs">
+      <DependentUpon>Generate_medical_Report_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Issue_Bed_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Issue_Bed_form.Designer.cs">
+      <DependentUpon>Issue_Bed_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\ManageAppointments_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\ManageAppointments_form.Designer.cs">
+      <DependentUpon>ManageAppointments_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Manage_DoctorSchedule_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Manage_DoctorSchedule_Form.Designer.cs">
+      <DependentUpon>Manage_DoctorSchedule_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\PatientSatisfactionSurveyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\PatientSatisfactionSurveyForm.Designer.cs">
+      <DependentUpon>PatientSatisfactionSurveyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Patient_menu_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Patient_menu_form.Designer.cs">
+      <DependentUpon>Patient_menu_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\ShiftAppointment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\ShiftAppointment_Form.Designer.cs">
+      <DependentUpon>ShiftAppointment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Suggest_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Suggest_Medicine_Form.Designer.cs">
+      <DependentUpon>Suggest_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\Update_Patient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\Update_Patient_Form.Designer.cs">
+      <DependentUpon>Update_Patient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\ViewCommonDiseasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\ViewCommonDiseasesForm.Designer.cs">
+      <DependentUpon>ViewCommonDiseasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\ViewMedicalReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\ViewMedicalReportForm.Designer.cs">
+      <DependentUpon>ViewMedicalReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\ViewPrescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\ViewPrescriptionForm.Designer.cs">
+      <DependentUpon>ViewPrescriptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Form\View_Patient_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Form\View_Patient_form.Designer.cs">
+      <DependentUpon>View_Patient_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\AddMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\AddMedicine_Form.Designer.cs">
+      <DependentUpon>AddMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\DeleteMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\DeleteMedicine_Form.Designer.cs">
+      <DependentUpon>DeleteMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\Pharmacy_Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\Pharmacy_Menu_Form.Designer.cs">
+      <DependentUpon>Pharmacy_Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\PurchaseMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\PurchaseMedicine_Form.Designer.cs">
+      <DependentUpon>PurchaseMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\UpdateMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\UpdateMedicine_Form.Designer.cs">
+      <DependentUpon>UpdateMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\ViewDemandMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\ViewDemandMedicine_Form.Designer.cs">
+      <DependentUpon>ViewDemandMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\ViewExpiredMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\ViewExpiredMedicine_Form.Designer.cs">
+      <DependentUpon>ViewExpiredMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Form\ViewMedicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Form\ViewMedicine_Form.Designer.cs">
+      <DependentUpon>ViewMedicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUser Form\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUser Form\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUserGridViewForm\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUserGridViewForm\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUserGridViewForm\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Add_Patient_Form.resx">
+      <DependentUpon>Add_Patient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Admin_menu_Form.resx">
+      <DependentUpon>Admin_menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Billing_Form.resx">
+      <DependentUpon>Billing_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\BookAppointmentForm.resx">
+      <DependentUpon>BookAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\CancelAppointment_Form.resx">
+      <DependentUpon>CancelAppointment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\CheckBedAvailabilityForm.resx">
+      <DependentUpon>CheckBedAvailabilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\CheckBill_Form.resx">
+      <DependentUpon>CheckBill_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\CheckDoctorSchedule_Form.resx">
+      <DependentUpon>CheckDoctorSchedule_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Check_Doctor_Appointment_Form.resx">
+      <DependentUpon>Check_Doctor_Appointment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\DetailForm.resx">
+      <DependentUpon>DetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Discharge_Patient_Form.resx">
+      <DependentUpon>Discharge_Patient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Generate_medical_Report_Form.resx">
+      <DependentUpon>Generate_medical_Report_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Issue_Bed_form.resx">
+      <DependentUpon>Issue_Bed_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\ManageAppointments_form.resx">
+      <DependentUpon>ManageAppointments_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Manage_DoctorSchedule_Form.resx">
+      <DependentUpon>Manage_DoctorSchedule_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\PatientSatisfactionSurveyForm.resx">
+      <DependentUpon>PatientSatisfactionSurveyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Patient_menu_form.resx">
+      <DependentUpon>Patient_menu_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\ShiftAppointment_Form.resx">
+      <DependentUpon>ShiftAppointment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Suggest_Medicine_Form.resx">
+      <DependentUpon>Suggest_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\Update_Patient_Form.resx">
+      <DependentUpon>Update_Patient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\ViewCommonDiseasesForm.resx">
+      <DependentUpon>ViewCommonDiseasesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\ViewMedicalReportForm.resx">
+      <DependentUpon>ViewMedicalReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\ViewPrescriptionForm.resx">
+      <DependentUpon>ViewPrescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Form\View_Patient_form.resx">
+      <DependentUpon>View_Patient_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\AddMedicine_Form.resx">
+      <DependentUpon>AddMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\DeleteMedicine_Form.resx">
+      <DependentUpon>DeleteMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\Pharmacy_Menu_Form.resx">
+      <DependentUpon>Pharmacy_Menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\PurchaseMedicine_Form.resx">
+      <DependentUpon>PurchaseMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\UpdateMedicine_Form.resx">
+      <DependentUpon>UpdateMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\ViewDemandMedicine_Form.resx">
+      <DependentUpon>ViewDemandMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\ViewExpiredMedicine_Form.resx">
+      <DependentUpon>ViewExpiredMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Form\ViewMedicine_Form.resx">
+      <DependentUpon>ViewMedicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Addpatient-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\Addpatient-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\img_492028%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\patientInfo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\update-account-line-icon-update-account-line-icon-outline-vector-sign-linear-style-pictogram-isolated-white-refresh-user-symbol-103844490-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\update-account-line-icon-update-account-line-icon-outline-vector-sign-linear-style-pictogram-isolated-white-refresh-user-symbol-103844490-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\New folder\update-account-line-icon-update-account-line-icon-outline-vector-sign-linear-style-pictogram-isolated-white-refresh-user-symbol-103844490-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\roomInfo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\images-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\Xl_TFPJbHkpzqns12DVi5-transformed-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\2137982-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\203114-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\5912669-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\Invoice%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\Invoice_1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\New folder\user-remove-line-icon-user-remove-line-icon-outline-vector-sign-linear-style-pictogram-isolated-white-delete-account-symbol-103844356-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\New folder\discharge-icon-12-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Hospital.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\patientMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\PatientMenu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\Bed_Availibility-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\BookAppointment-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\Check_Doctor_Schedule-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\CheckBill-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\MedicalReport-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\Patient_Detail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\View_Common_Diseases-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\View_Prescription-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\Check_Doctor_Schedule-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\CheckBill-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\MedicalReport-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\Patient_Detail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\PatientSatisfactorySurvey-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\View_Common_Diseases-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\View_Prescription-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\Bed_Availibility-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Patient\icon\BookAppointment-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Pharmacy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\DeleteMed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\DemandMed-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\ExpiredMed1-transformed-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\PurchaseMedicine-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\UpdateMedicine-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\View_Medicines-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Pharmacy\Icon\AddMedicine-removebg-preview%281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

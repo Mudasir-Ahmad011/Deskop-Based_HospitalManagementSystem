@@ -1,0 +1,3 @@
+Mudasir,1234,Admin
+Ali,1234,Patient
+Ahmad,1234,Pharmacist
